@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+main {
+  width: 375px;
+  height: 812px;
+  background-color: #eeece5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .status-bar {
+  background-image: url("./img/status-bar.png");
+  background-size: contain;
+  width: 384px;
+  height: 44px;
+}
+/* header */
+header {
+  width: 327px;
+  display: flex;
+  /* margin: 0 auto; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .user-img {
+  background-image: url("./img/usr-img.svg");
+  width: 43px;
+  height: 43px;
+}
+
+header .account-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+header .icons {
+  display: flex;
+}
+header .icons .QR-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("./img/qr.png");
+  background-size: contain;
+  margin-right: 18px;
+}
+header .icons .search-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("./img/search.png");
+  background-size: contain;
+}
+
+/* 계정 박스 */
+.account-status {
+}
+section .account-info {
+  width: 279px;
+  /* height: 155px; */
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(226, 191, 66, 0.19);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 33px 0 24px;
+}
+section .account-info .account-num {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+section .account-info .account-num p {
+  color: #858585;
+  letter-spacing: -0.24px;
+  margin: 0;
+}
+section .account-info .account-num a {
+  margin-left: 27.5px;
+}
+section .account-balance {
+  display: flex;
+  align-items: baseline;
+  letter-spacing: 2px;
+}
+section .account-balance p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 16px 0;
+}
+section .mini-chart {
+  display: flex;
+  align-items: center;
+}
+section .mini-chart .chart-img {
+  background-image: url("./img/mini-chart.png");
+  background-size: cover;
+  width: 202px;
+  height: 17px;
+  margin-right: 5px;
+}
+section .mini-chart .chart-icon {
+  background-image: url("./img/chart-icon.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+section .balance-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #858585;
+  margin: 8px 0 6px 0;
+}
+section .ad {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+section .ad a {
+  margin-left: 6px;
+}
