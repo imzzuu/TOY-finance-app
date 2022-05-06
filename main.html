@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>finance-app</title>
     <link rel="stylesheet" href="./main.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <main class="home">
@@ -44,8 +45,79 @@
         </div>
       </section>
       <!-- 사용내역 박스 -->
-      <section class="account-history"></section>
-      <nav></nav>
+
+      <section class="account-history">
+        <div class="up-btn"></div>
+        <!-- 저금통 -->
+        <ul class="save-list">
+          <li class="save-item">
+            <p>여행가자!</p>
+            <p>842,200원</p>
+          </li>
+          <li class="save-item">
+            <p>냉장고 사기</p>
+            <p>142,200원</p>
+          </li>
+        </ul>
+
+        <!-- 사용내역 -->
+        <div class="recent">
+          <div class="recent-item-wrapper">
+            <div class="recent-header">
+              <p class="recent-date">오늘</p>
+              <p class="total-expense">127,500원 지출</p>
+            </div>
+            <ul class="recent-list">
+              <li class="recent-item">
+                <p class="item">미스터 피자</p>
+                <p class="price minus">32,000</p>
+              </li>
+              <li class="recent-item">
+                <p class="item">하성운</p>
+                <p class="price plus">+82,000</p>
+              </li>
+              <li class="recent-item">
+                <p class="item">미스터 피자</p>
+                <p class="price minus">32,000</p>
+              </li>
+              <li class="recent-item">
+                <p class="item">미스터 피자</p>
+                <p class="price minus">32,000</p>
+              </li>
+            </ul>
+          </div>
+          <div class="recent-item-wrapper">
+            <div class="recent-header">
+              <p class="recent-date">내일</p>
+              <p class="total-expense">127,500원 지출</p>
+            </div>
+            <ul class="recent-list">
+              <li class="recent-item">
+                <p class="item">미스터 피자</p>
+                <p class="price minus">32,000</p>
+              </li>
+              <li class="recent-item">
+                <p class="item">하성운</p>
+                <p class="price plus">+82,000</p>
+              </li>
+              <li class="recent-item">
+                <p class="item">미스터 피자</p>
+                <p class="price minus">32,000</p>
+              </li>
+              <li class="recent-item">
+                <p class="item">미스터 피자</p>
+                <p class="price minus">32,000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <nav>
+        <div class="home"></div>
+        <div class="send"></div>
+        <div class="message"></div>
+        <div class="more"></div>
+      </nav>
     </main>
   </body>
 </html>
