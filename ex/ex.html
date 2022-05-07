@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="list"></ul>
+    <script>
+      // 옛날 방식
+      //   const reqUrl = "https://eulsoo.github.io/list.json";
+      //   const reqObj = new XMLHttpRequest(); // 통신에 필요한 메서드, 데이터 변수에 담기
+      //   reqObj.open("GET", reqUrl);
+      //   reqObj.responseType = "json";
+      //   reqObj.send();
+      //   reqObj.onload = () => {
+      //     const obj = reqObj.response;
+      //     work(obj);
+      //   };
+
+      // 최근 방식
+
+      fetch(
+        "https://raw.githubusercontent.com/jusunjo/bank-json/main/bank.json"
+      )
+        .then((res) => {
+          return res.json();
+        })
+        .then((obj) => {
+          return work(obj);
+        });
+
+      function work(obj) {
+        console.log(obj);
+
+        const ulEl = document.querySelector(".list"); // 한번만 해도 되니까 밖에 적기!!!
+        for (let i = 0; i < obj.length; i++) {
+          // li 만들기
+          const li = document.createElement("li");
+          // item 값 가져와서 li에 item값 넣기
+          li.textContent = obj[i].history;
+          // ul 에 li 붙이기
+          ulEl.appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>

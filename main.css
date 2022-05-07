@@ -219,6 +219,7 @@ section .ad a {
 .account-history .save-list .plus-saving {
   display: flex;
   align-items: center;
+  margin-left: 25px;
 }
 .account-history .save-list .plus-saving p {
   font-size: 12px;

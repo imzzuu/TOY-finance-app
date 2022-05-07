@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>finance-app</title>
+    <!-- 스타일 -->
     <link rel="stylesheet" href="./main.css" />
+    <!-- 스와이퍼 -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+    <!-- 날짜 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./json.js"></script>
   </head>
+
   <body>
     <div class="swiper mainSwiper">
       <div class="swiper-wrapper">
@@ -76,34 +85,17 @@
             <div class="recent">
               <div class="recent-item-wrapper">
                 <div class="recent-header">
-                  <p class="recent-date">오늘</p>
-                  <p class="total-expense">127,500원 지출</p>
+                  <!-- <p class="recent-date">오늘</p> -->
+                  <!-- <p class="total-expense">127,500원 지출</p> -->
                 </div>
-                <ul class="recent-list">
-                  <li class="recent-item">
-                    <p class="item">미스터 피자</p>
-                    <p class="price minus">32,000</p>
-                  </li>
-                  <li class="recent-item">
-                    <p class="item">하성운</p>
-                    <p class="price plus">+82,000</p>
-                  </li>
-                  <li class="recent-item">
-                    <p class="item">미스터 피자</p>
-                    <p class="price minus">32,000</p>
-                  </li>
-                  <li class="recent-item">
-                    <p class="item">미스터 피자</p>
-                    <p class="price minus">32,000</p>
-                  </li>
-                </ul>
+                <ul class="recent-list"></ul>
               </div>
               <div class="recent-item-wrapper">
                 <div class="recent-header">
                   <p class="recent-date">어제</p>
                   <p class="total-expense">127,500원 지출</p>
                 </div>
-                <ul class="recent-list">
+                <!-- <ul class="recent-list">
                   <li class="recent-item">
                     <p class="item">미스터 피자</p>
                     <p class="price minus">32,000</p>
@@ -120,7 +112,7 @@
                     <p class="item">미스터 피자</p>
                     <p class="price minus">32,000</p>
                   </li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </section>
@@ -258,13 +250,5 @@
         </main>
       </div>
     </div>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-      });
-      var swiper = new Swiper(".mainSwiper", {
-        slidesPerView: 1,
-      });
-    </script>
   </body>
 </html>
