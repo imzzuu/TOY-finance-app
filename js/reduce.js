@@ -4,6 +4,7 @@ const priceValues = obj.data.reduce((acc, current) => {
   acc[current.date].push(current.price);
   return acc;
 }, {});
+console.log(priceValues);
 
 const prices = Object.keys(priceValues).map((key) => {
   return {

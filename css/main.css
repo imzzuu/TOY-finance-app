@@ -14,7 +14,9 @@ ul {
 p {
   margin: 0;
 }
-
+body {
+  background-color: #e5e5e5;
+}
 /* 메인 */
 .mainSwiper {
   overflow: hidden;
@@ -35,7 +37,7 @@ main {
   position: relative;
 }
 main .status-bar {
-  background-image: url("./img/status-bar.png");
+  background-image: url("../img/status-bar.png");
   background-size: cover;
   width: 375px;
   height: 44px;
@@ -66,14 +68,14 @@ header .icons {
 header .icons .QR-icon {
   width: 24px;
   height: 24px;
-  background-image: url("./img/qr.png");
+  background-image: url("../img/qr.png");
   background-size: contain;
   margin-right: 18px;
 }
 header .icons .search-icon {
   width: 24px;
   height: 24px;
-  background-image: url("./img/search.png");
+  background-image: url("../img/search.png");
   background-size: contain;
 }
 
@@ -82,13 +84,11 @@ header .icons .search-icon {
 }
 section .account-info {
   width: 279px;
-  /* height: 155px; */
   background: #ffffff;
   box-shadow: 0px 0px 16px rgba(226, 191, 66, 0.19);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   border-radius: 12px;
   font-weight: 500;
@@ -125,13 +125,11 @@ section .mini-chart {
   align-items: center;
 }
 section .mini-chart .chart-img {
-  /* background-image: url("./img/mini-chart.png");
-  background-size: cover; */
   width: 202px;
   height: 17px;
 }
 section .mini-chart .chart-icon {
-  background-image: url("./img/chart-icon.png");
+  background-image: url("../img/chart-icon.png");
   background-size: cover;
   width: 24px;
   height: 24px;
@@ -162,7 +160,7 @@ section .ad a {
 .account-history {
   width: 375px;
   /* 수정 */
-  height: 383px;
+  height: 376px;
   background: #f5f5f5;
   box-shadow: 0px -5px 14px rgba(189, 144, 28, 0.08);
   border-radius: 30px 30px 0px 0px;
@@ -173,7 +171,7 @@ section .ad a {
 .account-history .up-btn {
   margin: 0 auto;
   margin-top: 5px;
-  background-image: url("./img/up-button.png");
+  background-image: url("../img/up-button.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 48px;
@@ -277,6 +275,8 @@ section .ad a {
   color: #ff5f00;
 }
 
+/* 네브 */
+
 nav {
   width: 375px;
   height: 76px;
@@ -288,26 +288,26 @@ nav {
   padding: 0 32px 0 46px;
 }
 nav .home {
-  background-image: url("./img/home.png");
+  background-image: url("../img/home.png");
   width: 28px;
   height: 28px;
 
   /* margin-right: 60px; */
 }
 nav .send {
-  background-image: url("./img/send.png");
+  background-image: url("../img/send.png");
   width: 30px;
   height: 23.44px;
   /* margin-right: 65px; */
 }
 nav .message {
-  background-image: url("./img/message.png");
+  background-image: url("../img/message.png");
   width: 24px;
   height: 24px;
   /* margin-right: 62px; */
 }
 nav .more {
-  background-image: url("./img/more.png");
+  background-image: url("../img/more.png");
   width: 28px;
   height: 28px;
 }

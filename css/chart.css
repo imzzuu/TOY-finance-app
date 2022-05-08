@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+body {
+  background-color: #e5e5e5;
+}
+
+/* 페이지 */
+
+.chart-page {
+  width: 375px;
+  height: 812px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.chart-page .status-bar {
+  background-image: url("../img/status-bar.png");
+  background-size: cover;
+  width: 375px;
+  height: 44px;
+  margin-bottom: 12px;
+}
+
+/* header */
+
+.page-header {
+}
+.page-header a {
+  top: 44px;
+  right: 13px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.24px;
+  display: block;
+  text-align: right;
+  cursor: pointer;
+  margin-right: 13px;
+}
+.page-header h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 12px 0 0 30px;
+}
+
+/* main */
+
+main {
+  flex: 1;
+  overflow-y: scroll;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+
+main .chart-wrapper {
+  width: 348px;
+  margin: 29px 0 0 29px;
+}
+main .goal-setting .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 기준금액설정 */
+main .goal-setting .item-header .text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.24px;
+  color: #444444;
+}
+main .goal-setting .item-header .money {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.24px;
+  color: #ff5f00;
+  margin-right: 40px;
+}
+main .goal-setting .goal-setting-chart {
+  background-image: url("../img/goal-setting-chart.png");
+  width: 308px;
+  height: 28px;
+  margin: 28px 0 59px;
+}
+/* 일간리포트 */
+main .goal-setting .daily-report {
+  background-image: url("../img/daily-report.png");
+  width: 347px;
+  height: 198px;
+  margin: 28px 0 35px;
+}
+/* 6월 지출 패턴 */
+main .goal-setting .monthly-chart {
+  background-image: url("../img/monthly-chart.png");
+  background-size: cover;
+  width: 308px;
+  height: 308px;
+  margin: 18px 0 6px;
+}
+main .goal-setting .expense-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+main .goal-setting .classification-wrapper {
+  display: flex;
+}
+main .goal-setting .classification-wrapper img {
+  width: 28px;
+  height: 28px;
+}
+main .goal-setting .classification-wrapper p {
+  margin-left: 19px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.24px;
+}
+main .goal-setting .expense-item .cost {
+  margin-right: 33px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.24px;
+  color: #858585;
+}
+
+/* 네브 */
+
+nav {
+  width: 375px;
+  height: 76px;
+  background-color: #00bdb2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 32px 0 46px;
+}
+nav .home {
+  background-image: url("../img/home.png");
+  width: 28px;
+  height: 28px;
+}
+nav .send {
+  background-image: url("../img/send.png");
+  width: 30px;
+  height: 23.44px;
+  /* margin-right: 65px; */
+}
+nav .message {
+  background-image: url("../img/message.png");
+  width: 24px;
+  height: 24px;
+  /* margin-right: 62px; */
+}
+nav .more {
+  background-image: url("../img/more.png");
+  width: 28px;
+  height: 28px;
+}

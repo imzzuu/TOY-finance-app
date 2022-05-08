@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/chart.css" />
+  </head>
+  <body>
+    <div class="chart-page">
+      <!-- 상단바 -->
+      <div class="status-bar"></div>
+      <!-- header -->
+      <header class="page-header">
+        <a href="./main.html">닫기</a>
+        <h3>지출관리</h3>
+      </header>
+      <!-- 메인 -->
+      <main>
+        <div class="chart-wrapper">
+          <!-- 기준금액설정 -->
+          <section class="goal-setting">
+            <header class="item-header">
+              <p class="text">기준금액설정</p>
+              <p class="money">2,100,000원</p>
+            </header>
+            <div class="goal-setting-chart"></div>
+          </section>
+          <!-- 일간리포트 -->
+          <section class="goal-setting">
+            <header class="item-header">
+              <p class="text">일간 리포트</p>
+            </header>
+            <div class="daily-report"></div>
+          </section>
+          <!-- 6월 지출패턴 -->
+          <section class="goal-setting">
+            <header class="item-header">
+              <p class="text">6월 지출 패턴</p>
+            </header>
+            <div class="monthly-chart"></div>
+            <ul class="expense-list">
+              <li class="expense-item">
+                <div class="classification-wrapper">
+                  <img src="./img/car-icon.png" alt="car" />
+                  <p class="classification">주유비</p>
+                </div>
+                <p class="cost">56,000원</p>
+              </li>
+              <li class="expense-item">
+                <div class="classification-wrapper">
+                  <img src="./img/health-icon.png" alt="health" />
+                  <p class="classification">건강관리비</p>
+                </div>
+                <p class="cost">80,000원</p>
+              </li>
+              <li class="expense-item">
+                <div class="classification-wrapper">
+                  <img src="./img/food-icon.png" alt="food" />
+                  <p class="classification">외식비</p>
+                </div>
+                <p class="cost">233,000원</p>
+              </li>
+              <li class="expense-item">
+                <div class="classification-wrapper">
+                  <img src="./img/market-icon.png" alt="market" />
+                  <p class="classification">장보기</p>
+                </div>
+                <p class="cost">390,000원</p>
+              </li>
+              <li class="expense-item">
+                <div class="classification-wrapper">
+                  <img src="./img/store-icon.png" alt="store" />
+                  <p class="classification">상점</p>
+                </div>
+                <p class="cost">46,000원</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <!-- 네브 -->
+      <nav>
+        <div class="home"></div>
+        <div class="send"></div>
+        <div class="message"></div>
+        <div class="more"></div>
+      </nav>
+    </div>
+  </body>
+</html>
