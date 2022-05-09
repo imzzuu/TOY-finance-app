@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/chart.css" />
+    <!-- 날짜 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- 차트 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script defer src="./js/chart.js"></script>
   </head>
   <body>
     <div class="chart-page">
@@ -13,7 +21,7 @@
       <div class="status-bar"></div>
       <!-- header -->
       <header class="page-header">
-        <a href="./main.html">닫기</a>
+        <a href="./index.html">닫기</a>
         <h3>지출관리</h3>
       </header>
       <!-- 메인 -->
@@ -32,49 +40,56 @@
             <header class="item-header">
               <p class="text">일간 리포트</p>
             </header>
-            <div class="daily-report"></div>
+            <div class="daily-report-wrapper">
+              <div class="daily-report">
+                <canvas id="daily-chart" width="500" height="200"></canvas>
+              </div>
+            </div>
           </section>
           <!-- 6월 지출패턴 -->
           <section class="goal-setting">
             <header class="item-header">
-              <p class="text">6월 지출 패턴</p>
+              <p class="text">5월 지출 패턴</p>
             </header>
-            <div class="monthly-chart"></div>
+            <div class="doughnutChart-wrapper">
+              <canvas id="doughnutChart" width="377" height="623"></canvas>
+              <p class="total"></p>
+            </div>
             <ul class="expense-list">
               <li class="expense-item">
                 <div class="classification-wrapper">
                   <img src="./img/car-icon.png" alt="car" />
                   <p class="classification">주유비</p>
                 </div>
-                <p class="cost">56,000원</p>
+                <p class="cost oiling"></p>
               </li>
               <li class="expense-item">
                 <div class="classification-wrapper">
                   <img src="./img/health-icon.png" alt="health" />
                   <p class="classification">건강관리비</p>
                 </div>
-                <p class="cost">80,000원</p>
+                <p class="cost health"></p>
               </li>
               <li class="expense-item">
                 <div class="classification-wrapper">
                   <img src="./img/food-icon.png" alt="food" />
                   <p class="classification">외식비</p>
                 </div>
-                <p class="cost">233,000원</p>
+                <p class="cost eatout"></p>
               </li>
               <li class="expense-item">
                 <div class="classification-wrapper">
                   <img src="./img/market-icon.png" alt="market" />
                   <p class="classification">장보기</p>
                 </div>
-                <p class="cost">390,000원</p>
+                <p class="cost mart"></p>
               </li>
               <li class="expense-item">
                 <div class="classification-wrapper">
                   <img src="./img/store-icon.png" alt="store" />
                   <p class="classification">상점</p>
                 </div>
-                <p class="cost">46,000원</p>
+                <p class="cost shopping"></p>
               </li>
             </ul>
           </section>

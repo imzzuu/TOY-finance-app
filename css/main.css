@@ -80,8 +80,7 @@ header .icons .search-icon {
 }
 
 /* 계정 박스 */
-.account-status {
-}
+
 section .account-info {
   width: 279px;
   background: #ffffff;
@@ -244,7 +243,11 @@ section .ad a {
 
 .recent {
   overflow-y: scroll;
-  height: 580px;
+  height: 280px;
+  transition: 0.3s ease-in;
+}
+.recent.active {
+  height: 525px;
 }
 .recent::-webkit-scrollbar {
   display: none;

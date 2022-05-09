@@ -103,19 +103,34 @@ main .goal-setting .goal-setting-chart {
   margin: 28px 0 59px;
 }
 /* 일간리포트 */
-main .goal-setting .daily-report {
-  background-image: url("../img/daily-report.png");
-  width: 347px;
-  height: 198px;
+main .goal-setting .daily-report-wrapper {
+  height: 200px;
+  overflow-x: scroll;
   margin: 28px 0 35px;
 }
+main .daily-report-wrapper::-webkit-scrollbar {
+  display: none;
+}
+main .goal-setting .daily-report {
+  width: 500px;
+  height: 200px;
+}
 /* 6월 지출 패턴 */
-main .goal-setting .monthly-chart {
-  background-image: url("../img/monthly-chart.png");
-  background-size: cover;
-  width: 308px;
-  height: 308px;
-  margin: 18px 0 6px;
+main .goal-setting .doughnutChart-wrapper {
+  position: relative;
+  margin-left: -29px;
+}
+main .goal-setting .total {
+  position: absolute;
+  bottom: 142px;
+  left: 126px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 2px;
+}
+main .goal-setting #doughnutChart {
+  margin: 18px 0 20px;
 }
 main .goal-setting .expense-item {
   display: flex;
