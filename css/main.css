@@ -167,7 +167,7 @@ section .ad a {
   position: relative;
   top: 0;
   padding: 5px 37px 0 30px;
-  transition: 0.3s ease-in;
+  transition: 0.4s ease-in;
 }
 .account-history.active {
   top: -245px;
@@ -226,6 +226,12 @@ section .ad a {
 .account-history .save-list .second:nth-child(2) {
   background: linear-gradient(90deg, #005f59 56%, rgba(218, 218, 218, 1) 56%);
 }
+.account-history .save-list .third:nth-child(1) {
+  background: linear-gradient(90deg, #0a73c3 92%, rgba(218, 218, 218, 1) 92%);
+}
+.account-history .save-list .third:nth-child(2) {
+  background: linear-gradient(90deg, #eeba00 56%, rgba(218, 218, 218, 1) 56%);
+}
 
 .account-history .save-list .plus-saving {
   display: flex;
@@ -244,7 +250,7 @@ section .ad a {
 .recent {
   overflow-y: scroll;
   height: 280px;
-  transition: 0.3s ease-in;
+  transition: 0.4s ease-in;
 }
 .recent.active {
   height: 525px;

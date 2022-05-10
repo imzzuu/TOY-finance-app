@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/send.css" />
+    <script defer src="./js/send.js"></script>
+  </head>
+  <body>
+    <div class="send-page">
+      <!-- 상단바 -->
+      <div class="status-bar"></div>
+      <!-- header -->
+      <header class="page-header">
+        <a href="./index.html">취소</a>
+        <h3>이체</h3>
+      </header>
+      <div class="change-box">
+        <!-- 메인 1 -->
+        <main class="accout-list-page">
+          <button class="account-btn">직접입력</button>
+          <ul class="account-list">
+            <li class="account-item">
+              <div class="account-wrapper">
+                <img class="user-img" src="./img/send-userImg1.png" />
+                <div class="user-info">
+                  <p class="name">정을수</p>
+                  <p class="account">신한 112048393002</p>
+                </div>
+              </div>
+              <img class="star" src="./img/star.png" alt="star" />
+            </li>
+            <li class="account-item">
+              <div class="account-wrapper">
+                <img class="user-img" src="./img/send-userImg2.png" />
+                <div class="user-info">
+                  <p class="name">신이현</p>
+                  <p class="account">국민 112048393002v</p>
+                </div>
+              </div>
+              <img class="star" src="./img/star.png" alt="star" />
+            </li>
+            <li class="account-item">
+              <div class="account-wrapper">
+                <img class="user-img" src="./img/send-userImg3.png" />
+                <div class="user-info">
+                  <p class="name">웅진코웨이</p>
+                  <p class="account">국민 112048393002</p>
+                </div>
+              </div>
+              <img class="star" src="./img/star.png" alt="star" />
+            </li>
+            <li class="account-item">
+              <div class="account-wrapper">
+                <img class="user-img" src="./img/send-userImg4.png" />
+                <div class="user-info">
+                  <p class="name">기강 슈퍼</p>
+                  <p class="account">하나 112048393002</p>
+                </div>
+              </div>
+              <img class="star" src="./img/star.png" alt="star" />
+            </li>
+            <li class="account-item">
+              <div class="account-wrapper">
+                <img class="user-img" src="./img/send-userImg5.png" />
+                <div class="user-info">
+                  <p class="name">김민석</p>
+                  <p class="account">하나 112048393002</p>
+                </div>
+              </div>
+              <img class="star" src="./img/star.png" alt="star" />
+            </li>
+            <li class="account-item">
+              <div class="account-wrapper">
+                <img class="user-img" src="./img/send-userImg6.png" />
+                <div class="user-info">
+                  <p class="name">기성훈</p>
+                  <p class="account">하나 112048393002</p>
+                </div>
+              </div>
+              <img class="star" src="./img/star.png" alt="star" />
+            </li>
+          </ul>
+        </main>
+        <!-- 메인2 -->
+        <main class="send-money">
+          <section class="user-wrapper">
+            <img class="user-img" src="./img/send-userImg1.png" />
+            <div class="user-info">
+              <p class="name">정을수</p>
+              <p class="account">신한 112048393002</p>
+            </div>
+          </section>
+          <section>
+            <div class="input-wrapper">
+              <div class="amount"></div>
+              <p>원</p>
+            </div>
+            <div class="account-info">생활비 계좌 : 1,752,900 에서</div>
+            <div class="num-pad">
+              <div class="btn" onclick="addNum('1')">1</div>
+              <div class="btn" onclick="addNum('2')">2</div>
+              <div class="btn" onclick="addNum('3')">3</div>
+              <div class="btn" onclick="addNum('4')">4</div>
+              <div class="btn" onclick="addNum('5')">5</div>
+              <div class="btn" onclick="addNum('6')">6</div>
+              <div class="btn" onclick="addNum('7')">7</div>
+              <div class="btn" onclick="addNum('8')">8</div>
+              <div class="btn" onclick="addNum('9')">9</div>
+              <div class="btn" onclick="addNum('0')">0</div>
+              <div class="btn" onclick="addNum('00')">00</div>
+              <div class="btn arrow" onclick="delNum()">←</div>
+            </div>
+            <button class="next-btn">다음</button>
+          </section>
+        </main>
+        <main class="complete-send">
+          <div class="complete-message">
+            <span>정을수</span> 님께 <br />
+            <span class="total-send-money">38000</span> 원이 <br />
+            이체되었습니다.
+          </div>
+        </main>
+      </div>
+      <nav>
+        <div class="home"></div>
+        <div class="send"></div>
+        <div class="message"></div>
+        <div class="more"></div>
+      </nav>
+    </div>
+  </body>
+</html>
