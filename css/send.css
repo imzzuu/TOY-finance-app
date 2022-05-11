@@ -74,9 +74,14 @@ body {
 .account-btn {
   width: 317px;
   height: 47px;
+  background-color: #ffffff;
   border: 1px solid #858585;
   border-radius: 4px;
-  margin: 14px 0 44px 29px;
+  margin: 0 0 44px 29px;
+  cursor: pointer;
+}
+.account-btn:hover {
+  background-color: #d4d0d0;
 }
 .account-item {
   display: flex;
@@ -90,9 +95,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+.account-item .user-img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
 .user-info {
   margin-left: 17px;
 }
+
 .star {
   width: 24px;
   height: 24px;
@@ -106,6 +117,9 @@ main .user-wrapper {
   margin-bottom: 45px;
 }
 main .user-wrapper .user-img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
   margin: 0 17px 0 30px;
 }
 main .user-wrapper .name {

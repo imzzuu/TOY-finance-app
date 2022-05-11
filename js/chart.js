@@ -100,8 +100,8 @@ async function getTodayData() {
     }
   }
 
-  // 합계 구하기
-  const total = Math.abs(eatOut + health + oiling + mart + shopping)
+  // 총 합계 구하기
+  const total = (eatOut + health + oiling + mart + shopping)
     .toString()
     .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
   document.querySelector(".total").textContent = `${total}원`;
